@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b15324765a7f754f98001a4068e4594
+guid: d6ac475331742044eb8ecb9a1708e37e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,232 +110,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_0
+      name: pk_jumpandfall_new-Sheet_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 18
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f16adf4c8587b4e959f0c74babfae8
-      internalID: -1307825079
+      spriteID: 33549c24bc1db2f4bbe04f251d4b5b88
+      internalID: 1951519482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_1
+      name: pk_jumpandfall_new-Sheet_1
       rect:
         serializedVersion: 2
         x: 40
         y: 0
-        width: 18
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18266aa82286d9f40a2d083cf581ea27
-      internalID: -22337608
+      spriteID: 501460fc7de28ba4d8d9e8c43fcf71d8
+      internalID: -2112429052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_2
+      name: pk_jumpandfall_new-Sheet_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 80
         y: 0
-        width: 20
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30843715cdf5a3342927f25aee74dcc7
-      internalID: -838482137
+      spriteID: 8f8fc827b9c61cf499cad1c93a773631
+      internalID: -1372871803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_3
+      name: pk_jumpandfall_new-Sheet_3
       rect:
         serializedVersion: 2
-        x: 104
+        x: 120
         y: 0
-        width: 18
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21396c0ef447fe748aab6863e375f3b7
-      internalID: -1320170741
+      spriteID: c1eddedb29ad0f142ad25b6422ee5fd4
+      internalID: 1248105558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_4
+      name: pk_jumpandfall_new-Sheet_4
       rect:
         serializedVersion: 2
-        x: 136
+        x: 160
         y: 0
-        width: 18
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aae818fdebdc56b488cbac88edc37e6c
-      internalID: 36151370
+      spriteID: ae4782a70defe8c4a97bc3a34f5b5300
+      internalID: 1307553572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_5
+      name: pk_jumpandfall_new-Sheet_5
       rect:
         serializedVersion: 2
-        x: 170
+        x: 200
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 409f06f204bd86e4cbccccf3ab04f82f
-      internalID: -1665913918
+      spriteID: 108938ddb7bcfa543aa9908dbb28da29
+      internalID: 1436519682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_6
+      name: pk_jumpandfall_new-Sheet_6
       rect:
         serializedVersion: 2
-        x: 202
+        x: 240
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e2c0853004b91e459b0c510e10511a8
-      internalID: 782407656
+      spriteID: 15c73b0c075182b47902aeba0f653971
+      internalID: -1770357898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_7
+      name: pk_jumpandfall_new-Sheet_7
       rect:
         serializedVersion: 2
-        x: 234
+        x: 280
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd08a6aa52d15ae4d866707786fd090d
-      internalID: 906257435
+      spriteID: bba220309a593a24cafc9df078ad893b
+      internalID: 228780493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_8
+      name: pk_jumpandfall_new-Sheet_8
       rect:
         serializedVersion: 2
-        x: 266
+        x: 320
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 099487050b3a2544d98895aa84cde77e
-      internalID: 1435861521
+      spriteID: 1a46e5e57f336d2419dd35463ec36f82
+      internalID: 1608825924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_9
+      name: pk_jumpandfall_new-Sheet_9
       rect:
         serializedVersion: 2
-        x: 298
+        x: 360
         y: 0
-        width: 16
-        height: 16
+        width: 40
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9daa2779301c7664e9cbf0c7944e3ee0
-      internalID: 1278011993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pillow knight sprites sheet run and idle old (1)_10
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f28c80c1bd8bb4a4f93755d9fbf20839
-      internalID: 725530788
+      spriteID: da967e3f037e10b47b6d474331ed054f
+      internalID: 2050896121
       vertices: []
       indices: 
       edges: []
@@ -351,17 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pillow knight sprites sheet run and idle old (1)_0: -1307825079
-      pillow knight sprites sheet run and idle old (1)_1: -22337608
-      pillow knight sprites sheet run and idle old (1)_10: 725530788
-      pillow knight sprites sheet run and idle old (1)_2: -838482137
-      pillow knight sprites sheet run and idle old (1)_3: -1320170741
-      pillow knight sprites sheet run and idle old (1)_4: 36151370
-      pillow knight sprites sheet run and idle old (1)_5: -1665913918
-      pillow knight sprites sheet run and idle old (1)_6: 782407656
-      pillow knight sprites sheet run and idle old (1)_7: 906257435
-      pillow knight sprites sheet run and idle old (1)_8: 1435861521
-      pillow knight sprites sheet run and idle old (1)_9: 1278011993
+      pk_jumpandfall_new-Sheet_0: 1951519482
+      pk_jumpandfall_new-Sheet_1: -2112429052
+      pk_jumpandfall_new-Sheet_2: -1372871803
+      pk_jumpandfall_new-Sheet_3: 1248105558
+      pk_jumpandfall_new-Sheet_4: 1307553572
+      pk_jumpandfall_new-Sheet_5: 1436519682
+      pk_jumpandfall_new-Sheet_6: -1770357898
+      pk_jumpandfall_new-Sheet_7: 228780493
+      pk_jumpandfall_new-Sheet_8: 1608825924
+      pk_jumpandfall_new-Sheet_9: 2050896121
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

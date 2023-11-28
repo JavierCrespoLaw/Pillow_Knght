@@ -7,11 +7,15 @@ public class Movement : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
-
+    
+    public float rayRange = 5f;
+    Vector2 groundRays;
 
     public bool grounded = false;
     Rigidbody2D rb;
     Animator anim;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +27,19 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            Move();
+            Jump();
+      
 
+        if (Input.GetButtonDown("Fire1") && grounded)
+        {
+            anim.Play("Attack");
+            anim.SetBool("Attacking", true);
+        }
+    }
 
+    public void Move()
+    {
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
@@ -44,8 +59,11 @@ public class Movement : MonoBehaviour
         {
             anim.SetBool("Moving", false);
         }
+    }
 
-        if(Input.GetButtonDown("Jump") && grounded)
+    public void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && grounded && !anim.GetBool("Attacking"))
         {
             grounded = false;
             anim.SetBool("Grounded", false);
@@ -55,10 +73,17 @@ public class Movement : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Floor"))
-        {
+          groundRays = new Vector2 (transform.position.x , transform.position.y -0.5f);
+          RaycastHit2D hitGround = Physics2D.Raycast(groundRays, -Vector2.up * rayRange);
+          if (hitGround.collider != null && hitGround.collider.tag=="Floor")
+          {
             grounded = true;
             anim.SetBool("Grounded", grounded);
-        }
+          } 
+    }
+
+    public void Reset()
+    {
+        anim.SetBool("Attacking", false);
     }
 }
