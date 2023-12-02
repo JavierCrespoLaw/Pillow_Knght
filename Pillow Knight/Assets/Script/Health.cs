@@ -9,12 +9,12 @@ public class Health : MonoBehaviour
     public float maxHealth ;
     float health ;
     public bool dead = false ;
-    float timer = 0 ;
+
 
     Rigidbody2D rb;
     Animator anim;
 
-    public void takeDamage(float damage) {
+    public void takeDamage() {
         if (health > 1) {
             health -= 1 ;
         }
@@ -23,12 +23,9 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void Death() {
-        anim.SetBool("Dead", true) ;
-        timer += Time.deltaTime ;
-            if (timer > 2) {
-                SceneManager.LoadScene("GameOver");
-        }
+    public void Death()
+    {
+        anim.SetBool("Dead", true);
     }
 
     // Start is called before the first frame update
@@ -45,5 +42,11 @@ public class Health : MonoBehaviour
         if (dead) {
             Death() ;
         }
+    }
+
+
+    void ChangeScene()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

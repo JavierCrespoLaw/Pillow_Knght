@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     public bool grounded = false;
     Rigidbody2D rb;
     Animator anim;
+    Health H;
     
     
 
@@ -22,19 +23,23 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        H = GetComponent<Health>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!H.dead)
+        {
             Move();
             Jump();
-      
 
-        if (Input.GetButtonDown("Fire1") && grounded)
-        {
-            anim.Play("Attack");
-            anim.SetBool("Attacking", true);
+
+            if (Input.GetButtonDown("Fire1") && grounded)
+            {
+                anim.Play("Attack");
+                anim.SetBool("Attacking", true);
+            }
         }
     }
 
