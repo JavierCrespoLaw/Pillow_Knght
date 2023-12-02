@@ -15,8 +15,11 @@ public class Movement : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     Health H;
-    
-    
+
+
+     public AudioSource swing;
+    public AudioSource Squeak;
+
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +75,7 @@ public class Movement : MonoBehaviour
         {
             grounded = false;
             anim.SetBool("Grounded", false);
+            Squeak.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
@@ -87,6 +91,10 @@ public class Movement : MonoBehaviour
           } 
     }
 
+    public void Swing()
+    {
+        swing.Play();
+    }
     public void Reset()
     {
         anim.SetBool("Attacking", false);

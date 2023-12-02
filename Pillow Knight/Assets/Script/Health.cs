@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    public AudioSource Squeak;
+
     public void takeDamage() {
         if (health > 1) {
             health -= 1 ;
@@ -25,6 +27,7 @@ public class Health : MonoBehaviour
 
     public void Death()
     {
+        Squeak.Play();
         anim.SetBool("Dead", true);
     }
 
@@ -40,6 +43,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         if (dead) {
+            
             Death() ;
         }
     }
