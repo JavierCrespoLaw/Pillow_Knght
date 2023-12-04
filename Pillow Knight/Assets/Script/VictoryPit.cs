@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class VictoryPit : MonoBehaviour
 {
+
+    public float gearsNeeded ;
+
+    public bool isUnlocked ;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) {
+
+        if (gearsNeeded <= 0) {
+            isUnlocked = true ;
+        }
+
+        if (collision.CompareTag("Player") && isUnlocked) {
             SceneManager.LoadScene("Victory");
         }
     }

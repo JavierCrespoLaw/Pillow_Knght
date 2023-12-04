@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
     {
           groundRays = new Vector2 (transform.position.x , transform.position.y -0.5f);
           RaycastHit2D hitGround = Physics2D.Raycast(groundRays, -Vector2.up * rayRange);
-          if (hitGround.collider != null && hitGround.collider.tag=="Floor")
+          if (hitGround.collider != null && hitGround.collider.tag=="Floor" && rb.velocity.y == 0)
           {
             grounded = true;
             anim.SetBool("Grounded", grounded);
