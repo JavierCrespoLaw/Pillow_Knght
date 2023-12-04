@@ -19,6 +19,6 @@ public class Replay : MonoBehaviour
 
     public void ReplayFunction()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("PlayScene");
     }
 }
