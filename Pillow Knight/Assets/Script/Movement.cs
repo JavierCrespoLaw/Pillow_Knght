@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -16,8 +17,10 @@ public class Movement : MonoBehaviour
     Animator anim;
     Health H;
 
+    public GameObject GD;
+    Boolean active = false;
 
-     public AudioSource swing;
+    public AudioSource swing;
     public AudioSource Squeak;
     public AudioSource Take;
 
@@ -106,5 +109,11 @@ public class Movement : MonoBehaviour
     {
         anim.SetBool("Attacking", false);
         anim.SetBool("Jumping", false);
+    }
+
+    public void Activate()
+    {
+        active = !active;
+        GD.SetActive(active);
     }
 }
