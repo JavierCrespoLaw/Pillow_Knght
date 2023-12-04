@@ -7,14 +7,20 @@ public class VictoryPit : MonoBehaviour
 {
 
     public float gearsNeeded ;
-
     public bool isUnlocked ;
+    public Sprite s;
+    public SpriteRenderer sp;
+
+    void Update()
+    {
+        if (gearsNeeded <= 0)
+        {
+            sp.sprite = s;
+            isUnlocked = true;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (gearsNeeded <= 0) {
-            isUnlocked = true ;
-        }
 
         if (collision.CompareTag("Player") && isUnlocked) {
             SceneManager.LoadScene("Victory");
