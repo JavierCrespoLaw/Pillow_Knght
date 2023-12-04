@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
 
      public AudioSource swing;
     public AudioSource Squeak;
+    public AudioSource Take;
 
 
     // Start is called before the first frame update
@@ -89,7 +90,12 @@ public class Movement : MonoBehaviour
           {
             grounded = true;
             anim.SetBool("Grounded", grounded);
-          } 
+          }
+    }
+
+    public void collected()
+    {
+        Take.Play();
     }
 
     public void Swing()
