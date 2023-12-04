@@ -75,6 +75,7 @@ public class Movement : MonoBehaviour
         {
             grounded = false;
             anim.SetBool("Grounded", false);
+            anim.SetBool("Jumping", true);
             Squeak.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
@@ -98,5 +99,6 @@ public class Movement : MonoBehaviour
     public void Reset()
     {
         anim.SetBool("Attacking", false);
+        anim.SetBool("Jumping", false);
     }
 }
