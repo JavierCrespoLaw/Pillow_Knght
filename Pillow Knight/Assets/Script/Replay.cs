@@ -21,4 +21,9 @@ public class Replay : MonoBehaviour
     {
         SceneManager.LoadScene("PlayScene");
     }
+
+    public void CreditFunction()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
 }
